@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kate Shirley, Ph.D.</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f7f5f0;
+      --text: #1a1a1a;
+      --muted: #666;
+      --accent: #2a2a2a;
+      --rule: #ccc;
+      --link: #1a1a1a;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.7;
+      padding: 4rem 2rem 6rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      transition: border-color 0.2s;
+    }
+    a:hover { border-color: var(--text); }
+
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72em;
+      letter-spacing: 0.03em;
+    }
+
+    /* Header */
+    header { margin-bottom: 3.5rem; }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72em;
+      color: var(--muted);
+      line-height: 1.9;
+    }
+
+    .meta a {
+      color: var(--muted);
+      border-bottom-color: transparent;
+    }
+    .meta a:hover { color: var(--text); border-color: var(--muted); }
+
+    /* Sections */
+    section { margin-bottom: 3rem; }
+
+    h2 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68em;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .intro { font-size: 1.15rem; line-height: 1.75; }
+    .intro em { font-style: italic; }
+
+    /* Expertise grid */
+    .expertise {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.8rem;
+    }
+    .expertise span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68em;
+      color: var(--muted);
+    }
+    .expertise span::after { content: " —"; }
+    .expertise span:last-child::after { content: ""; }
+
+    /* Publications */
+    .pub-list { list-style: none; }
+    .pub-list li {
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.95rem;
+    }
+    .pub-list li:last-child { border-bottom: none; }
+
+    .pub-authors {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65em;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .pub-title { font-style: italic; }
+
+    .pub-journal {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65em;
+      color: var(--muted);
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    .pub-status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62em;
+      color: var(--muted);
+      display: inline-block;
+      margin-top: 0.2rem;
+      border: 1px solid var(--rule);
+      padding: 0.1rem 0.4rem;
+      border-radius: 2px;
+    }
+
+    /* Contact */
+    .contact-line {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78em;
+    }
+
+    footer {
+      margin-top: 5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62em;
+      color: var(--rule);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kate Shirley, Ph.D.</h1>
+    <p class="tagline">Clinical Psychologist &amp; Researcher</p>
+    <div class="meta">
+      Clinical Postdoctoral Fellow<br>
+      Department of Psychiatry &amp; Human Behavior<br>
+      Warren Alpert Medical School, Brown University<br>
+      Providence, RI<br>
+      <br>
+      <a href="https://scholar.google.com/citations?user=8FiNzpoAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar↗</a> &nbsp;&nbsp;
+      <a href="https://www.ncbi.nlm.nih.gov/myncbi/kate.shirley.1/bibliography/public/" target="_blank">NLM-NCBI↗</a> &nbsp;&nbsp;
+      <a href="https://www.researchgate.net/profile/Kate-Shirley-3" target="_blank">ResearchGate↗</a> &nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/kateshirley/" target="_blank">LinkedIn↗</a> &nbsp;&nbsp;
+      <a href="https://www.ohsu.edu/people/kate-shirley-phd" target="_blank">OHSU↗</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p class="intro">
+      I am a clinical psychologist and clinician-scientist. My research examines access to and engagement with
+      evidence-based psychological interventions within integrated healthcare systems, with particular attention
+      to cognitive rehabilitation, substance use, and the structural conditions that shape who receives care
+      and when. I work at the intersection of intervention science, implementation research, and health systems
+      inquiry — bringing direct clinical experience into the design and interpretation of empirical work.
+    </p>
+  </section>
+
+  <section>
+    <h2>Research Focus</h2>
+    <div class="expertise">
+      <span>Rural Veterans' health</span>
+      <span>Access to cognitive rehabilitation</span>
+      <span>Telehealth intervention</span>
+      <span>Substance use &amp; alcohol use disorder</span>
+      <span>Implementation science</span>
+      <span>Health systems research</span>
+      <span>Administrative data methods</span>
+      <span>Geropsychology</span>
+      <span>Traumatic brain injury</span>
+      <span>Care pathways &amp; systems science</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected Publications</h2>
+    <ul class="pub-list">
+
+      <li>
+        <span class="pub-authors">Clauss, K., Shirley, K., et al. · 2025</span>
+        <span class="pub-title">Clinically meaningful change following compensatory cognitive training in veterans with a history of mild traumatic brain injury: A brief report</span>
+        <span class="pub-journal">Applied Neuropsychology: Adult</span>
+      </li>
+
+      <li>
+        <span class="pub-authors">Shirley, K., Campbell, L.M., Maye, J.E., Sano, E., Pickell, D., Jak, A.J., O'Neil, M.E., &amp; Twamley, E.W. · 2025</span>
+        <span class="pub-title">Feasibility of motivationally enhanced compensatory cognitive training for older Veterans with mild cognitive impairment</span>
+        <span class="pub-journal">Innovation in Aging, 9(Suppl 2), igaf122-3934</span>
+      </li>
+
+      <li>
+        <span class="pub-authors">Loftis, J.M., Firsick, E., Shirley, K., et al. · 2023</span>
+        <span class="pub-title">Inflammatory and mental health sequelae of covid-19</span>
+        <span class="pub-journal">Comprehensive Psychoneuroendocrinology, 15, 100186</span>
+      </li>
+
+      <li>
+        <span class="pub-authors">Shirley, K., O'Neil, M., Boyd, S., &amp; Loftis, J.M. · 2023</span>
+        <span class="pub-title">Differences in rates of impairment in adults who use methamphetamine using two sets of demographically corrected norms</span>
+        <span class="pub-journal">Applied Neuropsychology: Adult</span>
+      </li>
+
+      <li>
+        <span class="pub-authors">Shirley, K., Sano, E., &amp; O'Neil, M. · 2023</span>
+        <span class="pub-title">Pilot trial of compensatory cognitive training with Veterans in remission from alcohol use disorders</span>
+        <span class="pub-journal">Alcoholism: Clinical and Experimental Research, 47(S1), 230</span>
+      </li>
+
+      <li>
+        <span class="pub-authors">Shirley, K., Clauss, K., Cameron, D., et al. · 2023</span>
+        <span class="pub-title">Using the Federal Interagency Traumatic Brain Injury Research (FITBIR) informatics system to understand complex associations between traumatic brain injury and alcohol or substance use</span>
+        <span class="pub-journal">Archives of Clinical Neuropsychology, 38(7), 1310</span>
+      </li>
+
+      <li>
+        <span class="pub-authors">Shirley, K. &amp; Loftis, J.M. · 2022</span>
+        <span class="pub-title">A spotlight on HCV and SARS-COV-2 co-infection and brain function</span>
+        <span class="pub-journal">Pharmacology Biochemistry and Behavior, 217, 173403</span>
+      </li>
+
+      <li>
+        <span class="pub-authors">Shirley, K., O'Neil, M., &amp; Loftis, J. · 2022</span>
+        <span class="pub-title">Potential for inflated norms in neuropsychological assessment of individuals who use methamphetamine</span>
+        <span class="pub-journal">Journal of the International Neuropsychological Society, 28(S2), 578–579</span>
+      </li>
+
+      <li>
+        <span class="pub-authors">Huckans, M., Boyd, S., Shirley, K., et al. · 2021</span>
+        <span class="pub-title">Cognition during active methamphetamine use versus remission</span>
+        <span class="pub-journal">Journal of Clinical and Experimental Neuropsychology, 43(6), 599–610</span>
+      </li>
+
+      <li>
+        <span class="pub-authors">O'Neil, M.E., Cameron, D., Shirley, K., et al. · 2021</span>
+        <span class="pub-title">Change in learning and memory partially mediates effects of compensatory cognitive training on self-reported cognitive symptoms</span>
+        <span class="pub-journal">Journal of Head Trauma Rehabilitation, 36(6), 429–436</span>
+      </li>
+
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p class="contact-line"><a href="mailto:drkateshirley@gmail.com">drkateshirley@gmail.com</a></p>
+  </section>
+
+  <footer>©2026 Kate Shirley</footer>
+
+</body>
+</html>
