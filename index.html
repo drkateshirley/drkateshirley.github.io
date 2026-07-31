@@ -68,6 +68,20 @@
       margin-bottom: 1.2rem;
     }
 
+    nav.pages {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72em;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+    nav.pages a {
+      color: var(--muted);
+      border-bottom-color: transparent;
+      margin-right: 1.2rem;
+    }
+    nav.pages a:hover { color: var(--text); border-color: var(--muted); }
+    nav.pages a.current { color: var(--text); border-bottom-color: var(--text); }
+
     .meta {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.72em;
@@ -99,56 +113,11 @@
     .intro { font-size: 1.15rem; line-height: 1.75; }
     .intro em { font-style: italic; }
 
-    /* Expertise grid */
-    .expertise {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.3rem 0.8rem;
-    }
-    .expertise span {
+    .read-more {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.68em;
-      color: var(--muted);
-    }
-    .expertise span::after { content: " —"; }
-    .expertise span:last-child::after { content: ""; }
-
-    /* Publications */
-    .pub-list { list-style: none; }
-    .pub-list li {
-      padding: 0.9rem 0;
-      border-bottom: 1px solid var(--rule);
-      font-size: 0.95rem;
-    }
-    .pub-list li:last-child { border-bottom: none; }
-
-    .pub-authors {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.65em;
-      color: var(--muted);
-      display: block;
-      margin-bottom: 0.2rem;
-    }
-
-    .pub-title { font-style: italic; }
-
-    .pub-journal {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.65em;
-      color: var(--muted);
-      display: block;
-      margin-top: 0.2rem;
-    }
-
-    .pub-status {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.62em;
-      color: var(--muted);
+      font-size: 0.75em;
       display: inline-block;
-      margin-top: 0.2rem;
-      border: 1px solid var(--rule);
-      padding: 0.1rem 0.4rem;
-      border-radius: 2px;
+      margin-top: 0.8rem;
     }
 
     /* Contact */
@@ -170,8 +139,11 @@
   <header>
     <h1>Kate Shirley, Ph.D.</h1>
     <p class="tagline">Clinician-Scientist</p>
+    <nav class="pages">
+      <a href="index.html" class="current">Home</a>
+      <a href="research.html">Research</a>
+    </nav>
     <div class="meta">
-      <br>
       Ph.D., Clinical Psychology, Oregon Health &amp; Science University<br>
       Postdoctoral Fellowship, Warren Alpert Medical School, Brown University<br>
       <br>
@@ -181,6 +153,7 @@
       <a href="https://www.linkedin.com/in/kateshirley/" target="_blank">LinkedIn↗</a> &nbsp;&nbsp;
     </div>
   </header>
+
   <section>
     <h2>Clinical Practice</h2>
     <p class="intro">
@@ -191,113 +164,25 @@
       updates regarding availability.
     </p>
   </section>
+
   <section>
     <h2>Research</h2>
     <p class="intro">
-      I am a clinician-scientist who examines access to and engagement with evidence-based psychological
-      interventions within integrated healthcare systems, with particular attention to cognition, substance use,
-      and the structural conditions that shape who receives care and when. I work at the intersection of
-      intervention science, implementation research, and health systems inquiry — bringing direct clinical
-      experience into the design and interpretation of empirical work.
+      I am a clinician-scientist examining access to and engagement with evidence-based psychological
+      interventions within integrated healthcare systems, with particular attention to cognition, substance
+      use, and the structural conditions that shape who receives care and when.
+    </p>
+    <a class="read-more" href="research.html">View research &amp; publications →</a>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p class="contact-line">
+      <a href="mailto:drkateshirley@gmail.com">
+        drkateshirley [at] gmail [dot] com
+      </a>
     </p>
   </section>
 
-  <section>
-    <h2>Research Focus</h2>
-    <div class="expertise">
-      <span>Rural Veterans' health</span>
-      <span>Cognitive rehabilitation</span>
-      <span>Telehealth intervention</span>
-      <span>Substance use &amp; alcohol use disorder</span>
-      <span>Implementation science</span>
-      <span>Health systems research</span>
-      <span>Administrative data methods</span>
-      <span>Geropsychology</span>
-      <span>Traumatic brain injury</span>
-      <span>Care pathways &amp; systems science</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>Selected Publications</h2>
-    <ul class="pub-list">
-            <li>
-        <span class="pub-authors">Shirley, K., Sano, E., &amp; Gaudiano, B.A. · 2026</span>
-        <span class="pub-title">Veteran-informed design considerations for telehealth cognitive rehabilitation in substance use disorder care</span>
-        <span class="pub-journal">Psychological Services (in press)</span>
-      </li>
-      <li>
-    <span class="pub-authors">Shirley, K., Bolts, O., Pinto, L.A., Gaudiano, B.A., &amp; Metrik, J. · 2026</span>
-    <span class="pub-title">A qualitative study of veteran and provider perspectives on a novel acute care transitions intervention for co-occurring mood and substance use disorders</span>
-    <span class="pub-journal">Psychological Services (in press)</span>
-      <li>
-        <span class="pub-authors">Clauss, K., Shirley, K., et al. · 2025</span>
-        <span class="pub-title">Clinically meaningful change following compensatory cognitive training in veterans with a history of mild traumatic brain injury: A brief report</span>
-        <span class="pub-journal">Applied Neuropsychology: Adult, 1-7</span>
-      </li>
-
-      <li>
-        <span class="pub-authors">Shirley, K., Campbell, L.M., Maye, J.E., Sano, E., Pickell, D., Jak, A.J., O'Neil, M.E., &amp; Twamley, E.W. · 2025</span>
-        <span class="pub-title">Feasibility of motivationally enhanced compensatory cognitive training for older Veterans with mild cognitive impairment</span>
-        <span class="pub-journal">Innovation in Aging, 9(Suppl 2), igaf122-3934</span>
-      </li>
-
-      <li>
-        <span class="pub-authors">Loftis, J.M., Firsick, E., Shirley, K., et al. · 2023</span>
-        <span class="pub-title">Inflammatory and mental health sequelae of covid-19</span>
-        <span class="pub-journal">Comprehensive Psychoneuroendocrinology, 15, 100186</span>
-      </li>
-
-      <li>
-        <span class="pub-authors">Shirley, K., O'Neil, M., Boyd, S., &amp; Loftis, J.M. · 2023</span>
-        <span class="pub-title">Differences in rates of impairment in adults who use methamphetamine using two sets of demographically corrected norms</span>
-        <span class="pub-journal">Applied Neuropsychology: Adult, 32(1), 216-224</span>
-      </li>
-
-      <li>
-        <span class="pub-authors">Shirley, K., Sano, E., &amp; O'Neil, M. · 2023</span>
-        <span class="pub-title">Pilot trial of compensatory cognitive training with Veterans in remission from alcohol use disorders</span>
-        <span class="pub-journal">Alcoholism: Clinical and Experimental Research, 47(S1), 230</span>
-      </li>
-
-      <li>
-        <span class="pub-authors">Shirley, K., Clauss, K., Cameron, D., et al. · 2023</span>
-        <span class="pub-title">Using the Federal Interagency Traumatic Brain Injury Research (FITBIR) informatics system to understand complex associations between traumatic brain injury and alcohol or substance use</span>
-        <span class="pub-journal">Archives of Clinical Neuropsychology, 38(7), 1310</span>
-      </li>
-
-      <li>
-        <span class="pub-authors">Shirley, K. &amp; Loftis, J.M. · 2022</span>
-        <span class="pub-title">A spotlight on HCV and SARS-COV-2 co-infection and brain function</span>
-        <span class="pub-journal">Pharmacology Biochemistry and Behavior, 217, 173403</span>
-      </li>
-
-      <li>
-        <span class="pub-authors">Shirley, K., O'Neil, M., &amp; Loftis, J. · 2022</span>
-        <span class="pub-title">Potential for inflated norms in neuropsychological assessment of individuals who use methamphetamine</span>
-        <span class="pub-journal">Journal of the International Neuropsychological Society, 28(S2), 578–579</span>
-      </li>
-
-      <li>
-        <span class="pub-authors">Huckans, M., Boyd, S., Shirley, K., et al. · 2021</span>
-        <span class="pub-title">Cognition during active methamphetamine use versus remission</span>
-        <span class="pub-journal">Journal of Clinical and Experimental Neuropsychology, 43(6), 599–610</span>
-      </li>
-
-      <li>
-        <span class="pub-authors">O'Neil, M.E., Cameron, D., Shirley, K., et al. · 2021</span>
-        <span class="pub-title">Change in learning and memory partially mediates effects of compensatory cognitive training on self-reported cognitive symptoms</span>
-        <span class="pub-journal">Journal of Head Trauma Rehabilitation, 36(6), 429–436</span>
-      </li>
-
-    </ul>
-  </section>
-
- <section>
-  <h2>Contact</h2>
-  <p class="contact-line">
-    <a href="mailto:drkateshirley@gmail.com">
-      drkateshirley [at] gmail [dot] com
-    </a>
-  </p>
-</section>
+</body>
+</html>
