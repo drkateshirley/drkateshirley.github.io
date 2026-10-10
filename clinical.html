@@ -1,18 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research | Kate Shirley, PhD</title>
-  <meta name="description" content="Kate Shirley, Ph.D. specializes in health psychology, chronic illness, psychological assessment, and evidence-based psychotherapy.">
+
+  <title>Clinical Practice | Kate Shirley, Ph.D.</title>
+  <meta name="description" content="Independent clinical psychology practice of Kate Shirley, Ph.D., offering psychotherapy and psychological assessment in Portland, Oregon.">
   <meta name="author" content="Kate Shirley, Ph.D.">
-  <meta property="og:title" content="Clinical | Kate Shirley, Ph.D.">
-  <meta property="og:description" content="Psychotherapy for medical and mental health concerns.">
+  <meta property="og:title" content="Clinical Practice | Kate Shirley, Ph.D.">
+  <meta property="og:description" content="Psychotherapy and psychological assessment in Portland, Oregon.">
   <meta property="og:url" content="https://drkateshirley.com/clinical.html">
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --bg: #f7f5f0;
@@ -40,15 +47,14 @@
       border-bottom: 1px solid var(--rule);
       transition: border-color 0.2s;
     }
-    a:hover { border-color: var(--text); }
 
-    .mono {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72em;
-      letter-spacing: 0.03em;
+    a:hover {
+      border-color: var(--text);
     }
 
-    header { margin-bottom: 3.5rem; }
+    header {
+      margin-bottom: 3.5rem;
+    }
 
     header h1 {
       font-size: 1.6rem;
@@ -70,29 +76,29 @@
       font-size: 0.72em;
       color: var(--muted);
       margin-bottom: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.2rem;
     }
+
     nav.pages a {
       color: var(--muted);
       border-bottom-color: transparent;
-      margin-right: 1.2rem;
-    }
-    nav.pages a:hover { color: var(--text); border-color: var(--muted); }
-    nav.pages a.current { color: var(--text); border-bottom-color: var(--text); }
-
-    .meta {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72em;
-      color: var(--muted);
-      line-height: 1.9;
     }
 
-    .meta a {
-      color: var(--muted);
-      border-bottom-color: transparent;
+    nav.pages a:hover {
+      color: var(--text);
+      border-color: var(--muted);
     }
-    .meta a:hover { color: var(--text); border-color: var(--muted); }
 
-    section { margin-bottom: 3rem; }
+    nav.pages a.current {
+      color: var(--text);
+      border-bottom-color: var(--text);
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
 
     h2 {
       font-family: 'JetBrains Mono', monospace;
@@ -106,188 +112,259 @@
       border-bottom: 1px solid var(--rule);
     }
 
-    .intro { font-size: 1.15rem; line-height: 1.75; }
-    .intro em { font-style: italic; }
+    .intro {
+      font-size: 1.15rem;
+      line-height: 1.75;
+    }
+
+    p + p {
+      margin-top: 1rem;
+    }
+
+    .subheading {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72em;
+      font-weight: 500;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .assessment-list {
+      margin-left: 1.4rem;
+      font-size: 1.05rem;
+      line-height: 1.9;
+    }
+
+    .assessment-note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 1.2rem;
+    }
 
     .expertise {
       display: flex;
       flex-wrap: wrap;
       gap: 0.3rem 0.8rem;
     }
+
     .expertise span {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.68em;
       color: var(--muted);
     }
-    .expertise span::after { content: " —"; }
-    .expertise span:last-child::after { content: ""; }
 
-    .pub-list { list-style: none; }
-    .pub-list li {
-      padding: 0.9rem 0;
-      border-bottom: 1px solid var(--rule);
-      font-size: 0.95rem;
-    }
-    .pub-list li:last-child { border-bottom: none; }
-
-    .pub-authors {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.65em;
-      color: var(--muted);
-      display: block;
-      margin-bottom: 0.2rem;
+    .expertise span::after {
+      content: " —";
     }
 
-    .pub-title { font-style: italic; }
+    .expertise span:last-child::after {
+      content: "";
+    }
 
-    .pub-journal {
+    .meta {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.65em;
+      font-size: 0.72em;
       color: var(--muted);
-      display: block;
-      margin-top: 0.2rem;
+      line-height: 1.9;
+    }
+
+    .contact-details {
+      margin-top: 1.5rem;
+    }
+
+    .practice-note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 1.5rem;
+    }
+
+    .privacy-note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 1.2rem;
     }
 
     footer {
       margin-top: 5rem;
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.62em;
-      color: var(--rule);
+      color: var(--muted);
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 2.5rem 1.25rem 4rem;
+      }
+
+      header {
+        margin-bottom: 2.5rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1>Kate Shirley, Ph.D.</h1>
     <p class="tagline">Licensed Psychologist and Clinician-Scientist</p>
-    <nav class="pages">
+
+    <nav class="pages" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="clinical.html">Psychotherapy & Assessment</a>
-      <a href="research.html" class="current">Research</a>
+      <a href="clinical.html" class="current" aria-current="page">Psychotherapy &amp; Assessment</a>
+      <a href="research.html">Research</a>
     </nav>
   </header>
 
-  <section>
+  <main>
+
     <section>
-    <h2>Psychotherapy</h2>
-    <p class="intro">
-      I provide individual and group psychotherapy for adults living with chronic, progressive, or 
-      complex health conditions, as well as care partners and family members. My work focuses on the
-      psychological and relational aspects of health, including changes in functioning, identity,
-      and relationships; uncertainty about the future; grief and loss; and maintaining emotional
-      well-being and quality of life.
-    </p>
-    <p class="intro" style="margin-top: 1rem;">
-    My approach is warm, collaborative, and flexible. I draw primarily from Acceptance and Commitment
-    Therapy (ACT), cognitive-behavioral, and psychodynamic approaches, integrating practical strategies
-    with opportunities to better understand the experiences and patterns that shape how we relate to 
-    ourselves and others. Treatment is individualized, with attention to each person's circumstances,
-    goals, and values.
-    </p>
-    </p>
-  </section>
-  <section>
-    <h2>Assessment Services</h2>
-    <p class="intro">
-      I provide evidence-based psychological evaluations to clarify diagnoses, understand cognitive and
-      emotional functioning, and guide individualized treatment recommendations.
-    </p>
+      <h2>Clinical Practice</h2>
 
-    <p style="margin-top: 1.2rem; font-family: 'JetBrains Mono', monospace; font-size: 0.72em; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em;">
-      Areas of assessment include:
-    </p>
-    <ul style="margin: 0.8rem 0 0 1.4rem; font-size: 1.05rem; line-height: 1.9;">
-      <li>Diagnostic clarification</li>
-      <li>Adult ADHD</li>
-      <li>Mood, anxiety, and personality functioning</li>
-      <li>Cognitive screening and assessment*</li>
-      <li>Psychological aspects of chronic illness and other health conditions</li>
-      <li>Treatment planning</li>
-    </ul>
+      <p class="intro">
+        Health challenges can affect many aspects of life, sometimes
+        making longstanding concerns such as anxiety, depression, or
+        difficult relationship patterns harder to manage. I am interested
+        in understanding these experiences within the larger context
+        of each person's life.
+      </p>
+    </section>
 
-    <p style="margin-top: 1.2rem; font-size: 0.85rem; color: var(--muted); font-style: italic;">
-      *Please note that I am not a neuropsychologist and do not provide comprehensive neuropsychological
-      evaluations. Individuals requiring comprehensive neuropsychological testing will be referred to an
-      appropriately trained specialist.
-    </p>
-  </section>
-<section id="contact">
-  <h2>Contact &amp; Appointments</h2>
+    <section>
+      <h2>Psychotherapy</h2>
 
-  <p>
-    I offer individual psychotherapy in person in Portland,
-    Oregon, and via telehealth. Individual sessions are $185.
-  </p>
+      <p class="intro">
+        My approach is collaborative and grounded in evidence-based
+        practices. I draw from cognitive-behavioral, Acceptance and
+        Commitment Therapy (ACT), psychodynamic, and relational
+        approaches, depending on each person's needs and goals.
+      </p>
 
-  <p>
-    I am currently an out-of-network provider and can provide
-    superbills for clients seeking reimbursement through
-    their insurance.
-  </p>
+      <p class="intro">
+        Our work might involve taking time to better understand what
+        you're experiencing, exploring patterns that have been difficult
+        to change, or finding practical ways to manage current challenges.
+        I value understanding your experiences and what matters most to you.
+      </p>
+    </section>
 
-  <p>
-    I offer a complimentary 15-minute consultation to discuss
-    your needs, answer questions, and determine whether my
-    services may be a good fit.
-  </p>
+    <section>
+      <h2>Psychological Assessment</h2>
 
-  <p>
-    <strong>Email:</strong>
-    <a href="mailto:drkateshirley@gmail.com">drkateshirley@gmail.com</a><br>
-    <strong>Phone:</strong>
-    <a href="tel:503-395-8453">503-395-8453</a><br>
-    <strong>Psychology Today:</strong>
-    <a href="https://www.psychologytoday.com/us/therapists/kate-shirley-portland-or/1852077"
-       target="_blank" rel="noopener noreferrer">
-      View my profile
-    </a>
-  </p>
+      <p class="intro">
+        I provide psychological evaluations to clarify diagnoses,
+        better understand emotional and cognitive functioning, and
+        inform treatment planning. My assessment approach draws on
+        clinical interviewing, standardized measures, and consideration
+        of the broader medical and psychosocial context.
+      </p>
 
-  <p>
-    <small>
-      Please do not include sensitive or confidential health
-      information in your initial email or voicemail.
-    </small>
-  </p>
-</section>
-  <section>
-    <h2>Clinical Focus</h2>
-    <div class="expertise">
-      <span>Health psychology and behavioral medicine</span>
-      <span>Chronic illness and complex medical conditions</span>
-      <span>Care partner wellbeing</span>
-      <span>Anxiety and depression</span>
-      <span>Life transitions and adjustment</span>
-      <span>Cognitive concerns</span>
-      <span>Psychological assessment</span>
-      <span>Cognitive concerns related to medical and neurological conditions</span>
-      <span>Evidence-based psychotherapy (ACT, CBT, psychodynamic approaches)</span>
-    </div>
-  </section>
-<section>
-    <h2>Licensure</h2>
-    <div class="meta">
-      Licensed Psychologist, Oregon<br>
-    </div>
-  </section>
-<section>
-    <h2>Training</h2>
-    <div class="meta">
-      M.A., Counseling Psychology, Lewis &amp; Clark College<br>
-      Ph.D., Clinical Psychology, Oregon Health &amp; Science University<br>
-      Predoctoral Internship, Warren Alpert Medical School, Brown University<br>
-      Postdoctoral Fellowship, Warren Alpert Medical School, Brown University<br>
-    </div>
-  </section>
-  <section>
-    <h2>Contact</h2>
-    <p class="contact-line">
-      <a href="mailto:drkateshirley@gmail.com">
-        drkateshirley [at] gmail [dot] com
-      </a>
-    </p>
-  </section>
+      <p class="subheading">Areas of assessment include</p>
+
+      <ul class="assessment-list">
+        <li>Diagnostic clarification</li>
+        <li>Adult ADHD</li>
+        <li>Mood, anxiety, and personality functioning</li>
+        <li>Cognitive screening and assessment*</li>
+        <li>Psychological aspects of chronic illness and other health conditions</li>
+        <li>Treatment planning</li>
+      </ul>
+
+      <p class="assessment-note">
+        *I am not a neuropsychologist and do not provide comprehensive
+        neuropsychological evaluations. Individuals requiring comprehensive
+        neuropsychological testing will be referred to an appropriately
+        trained specialist.
+      </p>
+    </section>
+
+    <section>
+      <h2>Clinical Focus</h2>
+
+      <div class="expertise">
+        <span>Health psychology and behavioral medicine</span>
+        <span>Chronic and complex health conditions</span>
+        <span>Care partners and family members</span>
+        <span>Anxiety and depression</span>
+        <span>Grief and loss</span>
+        <span>Life transitions</span>
+        <span>Cognitive concerns</span>
+        <span>Psychological assessment</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Appointments &amp; Fees</h2>
+
+      <p>
+        I offer individual psychotherapy in person at my office in
+        Sellwood, Portland and via telehealth throughout Oregon.
+        Individual psychotherapy sessions are $185.
+      </p>
+
+      <p>
+        I am currently an out-of-network provider and do not bill
+        insurance directly. I can provide a superbill for clients
+        seeking reimbursement through their insurance.
+      </p>
+
+      <p>
+        Psychological assessment services and fees vary depending
+        on the nature of the evaluation. Please contact me to
+        discuss your assessment needs and availability.
+      </p>
+    </section>
+
+    <section>
+      <h2>Licensure &amp; Training</h2>
+
+      <div class="meta">
+        Licensed Psychologist, Oregon (License #4341)<br>
+        M.A., Counseling Psychology, Lewis &amp; Clark College<br>
+        Ph.D., Clinical Psychology, Oregon Health &amp; Science University<br>
+        Predoctoral Internship, Warren Alpert Medical School, Brown University<br>
+        Postdoctoral Fellowship, Warren Alpert Medical School, Brown University
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        Please reach out via email or phone to schedule a brief call
+        to see whether working together might be a good fit.
+      </p>
+
+      <p class="contact-details">
+        <strong>Email:</strong>
+        <a href="mailto:drkateshirley@gmail.com">drkateshirley@gmail.com</a><br>
+
+        <strong>Phone:</strong>
+        <a href="tel:+15033958453">503-395-8453</a><br>
+
+        <strong>Psychology Today:</strong>
+        <a href="https://www.psychologytoday.com/us/therapists/kate-shirley-portland-or/1852077"
+           target="_blank" rel="noopener noreferrer">
+          View my profile
+        </a>
+      </p>
+
+      <p class="privacy-note">
+        Please do not include sensitive or confidential health information
+        in your initial email or voicemail.
+      </p>
+
+      <p class="practice-note">
+        My private practice is separate from my clinical and research
+        roles at OHSU and the VA.
+      </p>
+    </section>
+
+  </main>
 
 </body>
 </html>
