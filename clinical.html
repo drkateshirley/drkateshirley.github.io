@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Clinical Practice | Kate Shirley, Ph.D.</title>
-  <meta name="description" content="Independent clinical psychology practice of Kate Shirley, Ph.D., offering psychotherapy and psychological assessment in Portland, Oregon.">
+  <meta name="description" content="Independent clinical psychology practice of Kate Shirley, Ph.D., offering behavioral medicine psychotherapy in Portland, Oregon.">
   <meta name="author" content="Kate Shirley, Ph.D.">
   <meta property="og:title" content="Clinical Practice | Kate Shirley, Ph.D.">
-  <meta property="og:description" content="Psychotherapy and psychological assessment in Portland, Oregon.">
+  <meta property="og:description" content="Behavioral medicine psychotherapy in Portland, Oregon.">
   <meta property="og:url" content="https://drkateshirley.com/clinical.html">
 
   <style>
@@ -121,6 +121,22 @@
       margin-top: 1rem;
     }
 
+    /* About Kate photograph */
+    .about-photo {
+      width: 240px;
+      max-width: 45%;
+      height: auto;
+      float: left;
+      margin: 0.4rem 1.5rem 1rem 0;
+      border-radius: 3px;
+    }
+
+    .about-section::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
     .subheading {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.72em;
@@ -136,13 +152,6 @@
       margin-left: 1.4rem;
       font-size: 1.05rem;
       line-height: 1.9;
-    }
-
-    .assessment-note {
-      font-size: 0.85rem;
-      color: var(--muted);
-      font-style: italic;
-      margin-top: 1.2rem;
     }
 
     .expertise {
@@ -208,6 +217,14 @@
       header {
         margin-bottom: 2.5rem;
       }
+
+      .about-photo {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 1.5rem;
+      }
     }
   </style>
 </head>
@@ -220,7 +237,7 @@
 
     <nav class="pages" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="clinical.html" class="current" aria-current="page">Psychotherapy &amp; Assessment</a>
+      <a href="clinical.html" class="current" aria-current="page">Psychotherapy</a>
       <a href="research.html">Research</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -228,28 +245,51 @@
 
   <main>
 
+    <section class="about-section">
+      <h2>About Kate</h2>
 
-<section>
-  <h2>Clinical Practice</h2>
+      <img
+        src="Shirley_bwphoto.jpg"
+        alt="Portrait of Kate Shirley, Ph.D."
+        class="about-photo"
+      >
 
-  <p class="intro">
-    I work with adults navigating chronic or complex health
-    conditions, as well as care partners and family members.
-    I also support people experiencing anxiety, depression,
-    grief, relationship difficulties, and life transitions.
-    I recognize that these experiences can affect many aspects
-    of life, and I aim to provide a space where we can
-    thoughtfully explore what's happening and find ways
-    forward that feel meaningful to you.
-  </p>
-</section>
+      <p class="intro">
+        Living with a health condition can change how you see yourself,
+        your relationships, and what you expected from life. Supporting
+        someone through illness can be just as complicated. I'm a licensed
+        clinical psychologist specializing in working with adults living
+        with chronic or complex health conditions, as well as care partners
+        and family members. Many people come to me while adjusting to a
+        diagnosis, coping with changes in daily life, or finding that
+        anxiety, depression, or grief has become harder to manage
+        alongside everything else.
+      </p>
+
+      <p class="intro">
+        My training at OHSU and Brown University emphasized behavioral
+        medicine and the connections between physical health, mental
+        health, relationships, and quality of life. I've worked in medical,
+        rehabilitation, specialty care, and mental health settings, and
+        I continue to work in hospital and VA settings alongside my
+        private practice.
+      </p>
+
+      <p class="intro">
+        I value the relationship at the center of therapy, and I feel
+        fortunate to accompany people through difficult times. I take
+        time to understand what you're facing and what matters most to
+        you, and we work from there at a pace that fits.
+      </p>
+    </section>
+
     <section>
       <h2>Licensure &amp; Training</h2>
 
       <div class="meta">
         Licensed Psychologist, Oregon (License #4341)<br>
-        Ph.D., Clinical Psychology, Oregon Health &amp; Science University<br>
         M.A., Counseling Psychology, Lewis &amp; Clark College<br>
+        Ph.D., Clinical Psychology, Oregon Health &amp; Science University<br>
         Predoctoral Internship, Warren Alpert Medical School, Brown University<br>
         Postdoctoral Fellowship, Warren Alpert Medical School, Brown University
       </div>
@@ -264,64 +304,64 @@
         Commitment Therapy (ACT), psychodynamic, and relational
         approaches, depending on each person's needs and goals.
       </p>
-
-      <p class="intro">
-        Our work might involve taking time to better understand what
-        you're experiencing, exploring patterns that have been difficult
-        to change, or finding practical ways to manage current challenges.
-        I value understanding your experiences and what matters most to you.
-      </p>
     </section>
 
     <section>
-      <h2>Psychological Assessment</h2>
+      <h2>Clinical Focus</h2>
 
       <p class="intro">
-        I provide psychological evaluations to clarify diagnoses,
-        better understand emotional and cognitive functioning, and
-        inform treatment planning. My assessment approach draws on
-        clinical interviewing, standardized measures, and consideration
-        of the broader medical and social context.
+        My practice focuses on the psychological and emotional aspects
+        of living with chronic, complex, and progressive health conditions.
+        Areas of focus include:
       </p>
-
-      <p class="subheading">Areas of assessment include</p>
 
       <ul class="assessment-list">
-        <li>Diagnostic clarification</li>
-        <li>Adult ADHD</li>
-        <li>Mood, anxiety, and personality functioning</li>
-        <li>Cognitive screening and assessment*</li>
-        <li>Psychological aspects of chronic illness and other health conditions</li>
-        <li>Treatment planning</li>
+        <li>
+          <strong>Movement disorders:</strong>
+          Parkinson's disease, essential tremor, Huntington's disease,
+          and atypical parkinsonian conditions
+        </li>
+        <li>
+          <strong>Neurological conditions:</strong>
+          Functional neurological disorder (FND), traumatic brain injury
+          (TBI), multiple sclerosis, and stroke
+        </li>
+        <li>
+          <strong>Neurodegenerative conditions:</strong>
+          Mild cognitive impairment, dementia, and other progressive
+          neurological conditions
+        </li>
+        <li>
+          <strong>Cancer and serious illness:</strong>
+          Adjusting to diagnosis, treatment, and changes in health
+          or functioning
+        </li>
+        <li>
+          <strong>Chronic pain and complex medical conditions:</strong>
+          Coping with persistent symptoms and their effects on daily life
+        </li>
+        <li>
+          <strong>Care partners and family members:</strong>
+          Supporting emotional well-being, navigating changes in
+          relationships, and maintaining a sense of self while caring
+          for someone with a health condition
+        </li>
       </ul>
-
-      <p class="assessment-note">
-        *I am not a neuropsychologist and do not provide comprehensive
-        neuropsychological evaluations. Individuals requiring comprehensive
-        neuropsychological testing will be referred to an appropriately
-        trained specialist.
-      </p>
     </section>
 
     <section>
       <h2>Appointments &amp; Fees</h2>
 
-      <p>
-        I offer individual psychotherapy in person at my office in
-        Sellwood, Portland and via telehealth throughout Oregon.
-        Individual psychotherapy sessions are $185.
-      </p>
+<p>
+  I offer individual psychotherapy in person at my office in
+  the Sellwood neighborhood in Portland and via telehealth throughout Oregon.
+  Individual psychotherapy sessions are $185.
+</p>
 
       <p>
         I am currently an out-of-network provider and do not bill
         insurance directly. I can provide a superbill for clients
         seeking reimbursement through their insurance.
-      </p>
-
-      <p>
-        Psychological assessment services and fees vary depending
-        on the nature of the evaluation. Please contact me to
-        discuss your assessment needs and availability.
       </p>
     </section>
 
