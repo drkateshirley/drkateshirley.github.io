@@ -11,10 +11,15 @@
   <meta property="og:title" content="Kate Shirley, Ph.D.">
   <meta property="og:description" content="Licensed psychologist and clinician-scientist. Research in cognitive rehabilitation, substance use, and health systems.">
   <meta property="og:url" content="https://drkateshirley.com">
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --bg: #f7f5f0;
@@ -42,7 +47,10 @@
       border-bottom: 1px solid var(--rule);
       transition: border-color 0.2s;
     }
-    a:hover { border-color: var(--text); }
+
+    a:hover {
+      border-color: var(--text);
+    }
 
     .mono {
       font-family: 'JetBrains Mono', monospace;
@@ -51,7 +59,9 @@
     }
 
     /* Header */
-    header { margin-bottom: 3.5rem; }
+    header {
+      margin-bottom: 3.5rem;
+    }
 
     header h1 {
       font-size: 1.6rem;
@@ -74,13 +84,22 @@
       color: var(--muted);
       margin-bottom: 1.2rem;
     }
+
     nav.pages a {
       color: var(--muted);
       border-bottom-color: transparent;
       margin-right: 1.2rem;
     }
-    nav.pages a:hover { color: var(--text); border-color: var(--muted); }
-    nav.pages a.current { color: var(--text); border-bottom-color: var(--text); }
+
+    nav.pages a:hover {
+      color: var(--text);
+      border-color: var(--muted);
+    }
+
+    nav.pages a.current {
+      color: var(--text);
+      border-bottom-color: var(--text);
+    }
 
     .meta {
       font-family: 'JetBrains Mono', monospace;
@@ -93,10 +112,16 @@
       color: var(--muted);
       border-bottom-color: transparent;
     }
-    .meta a:hover { color: var(--text); border-color: var(--muted); }
+
+    .meta a:hover {
+      color: var(--text);
+      border-color: var(--muted);
+    }
 
     /* Sections */
-    section { margin-bottom: 3rem; }
+    section {
+      margin-bottom: 3rem;
+    }
 
     h2 {
       font-family: 'JetBrains Mono', monospace;
@@ -110,14 +135,32 @@
       border-bottom: 1px solid var(--rule);
     }
 
-    .intro { font-size: 1.15rem; line-height: 1.75; }
-    .intro em { font-style: italic; }
+    .intro {
+      font-size: 1.15rem;
+      line-height: 1.75;
+    }
+
+    .intro em {
+      font-style: italic;
+    }
 
     .read-more {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.75em;
       display: inline-block;
       margin-top: 0.8rem;
+    }
+
+    /* Mountain road photograph */
+    .homepage-photo {
+      margin: 0 0 3rem;
+    }
+
+    .homepage-photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 3px;
     }
 
     /* Contact */
@@ -134,47 +177,65 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1>Kate Shirley, Ph.D.</h1>
-    <p class="tagline">Licensed Psychologist and Clinician-Scientist<br>
-    Portland, Oregon</p>
+    <p class="tagline">
+      Licensed Psychologist and Clinician-Scientist<br>
+      Portland, Oregon
+    </p>
+
     <nav class="pages">
       <a href="index.html" class="current">Home</a>
       <a href="clinical.html">Psychotherapy</a>
       <a href="research.html">Research</a>
     </nav>
-    </div>
   </header>
 
   <section>
     <h2>Clinical Practice</h2>
-<p class="intro">
-  I am a clinical psychologist specializing in health psychology and behavioral medicine. I work with adults
-  living with chronic, progressive, or complex health conditions, as well as care partners and family members
-  navigating the impact of illness on their own lives. My work focuses on the psychological and relational
-  aspects of health, including changes in functioning, identity, relationships, life transitions, grief and loss,
-  and overall well-being.
-</p>
 
-<p class="practice-note">
-  My private practice is separate from my clinical and research roles at OHSU and the VA.
-</p>
-</section>
+    <p class="intro">
+      I am a clinical psychologist specializing in health psychology and behavioral medicine. I work with adults
+      living with chronic, progressive, or complex health conditions, as well as care partners and family members
+      navigating the impact of illness on their own lives. My work focuses on the psychological and relational
+      aspects of health, including changes in functioning, identity, relationships, life transitions, grief and loss,
+      and overall well-being.
+    </p>
 
-<section>
-  <h2>Research</h2>
-  <p class="intro">
+    <p class="practice-note">
+      My private practice is separate from my clinical and research roles at OHSU and the VA.
+    </p>
+  </section>
+
+  <!-- Mountain road photograph -->
+  <div class="homepage-photo">
+    <img
+      src="mountain-road.jpg"
+      alt="Mountain road winding through evergreen forest toward a snow-covered peak"
+      loading="lazy"
+    >
+  </div>
+
+  <section>
+    <h2>Research</h2>
+
+    <p class="intro">
       I am a clinician-scientist examining access to and engagement with evidence-based psychological
       interventions within integrated healthcare systems, with particular attention to cognition, substance
       use, and the structural conditions that shape who receives care and when.
     </p>
-    <a class="read-more" href="research.html">View research &amp; publications →</a>
+
+    <a class="read-more" href="research.html">
+      View research &amp; publications →
+    </a>
   </section>
 
   <section>
     <h2>Contact</h2>
+
     <p class="contact-line">
       <a href="mailto:drkateshirley@gmail.com">
         drkateshirley [at] gmail [dot] com
