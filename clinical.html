@@ -123,8 +123,8 @@
 
     /* About Kate photograph */
     .about-photo {
-      width: 240px;
-      max-width: 45%;
+      width: 280px;
+      max-width: 48%;
       height: auto;
       float: left;
       margin: 0.4rem 1.5rem 1rem 0;
@@ -140,15 +140,25 @@
       clear: both;
     }
 
-    /* Ocean photograph */
-    .clinical-photo {
-      margin: 0 0 3rem;
+    /* Psychotherapy layout and ocean photograph */
+    .psychotherapy-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
     }
 
-    .clinical-photo img {
+    .psychotherapy-layout .intro {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .psychotherapy-photo {
       display: block;
-      width: 100%;
-      height: auto;
+      width: 230px;
+      height: 230px;
+      flex-shrink: 0;
+      object-fit: cover;
+      object-position: center;
       border-radius: 3px;
     }
 
@@ -233,16 +243,22 @@
         margin-bottom: 2.5rem;
       }
 
-.about-photo {
-  width: 280px;
-  max-width: 48%;
-  height: auto;
-  float: left;
-  margin: 0.4rem 1.5rem 1rem 0;
-  border-radius: 3px;
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-user-drag: none;
+      .about-photo {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 1.5rem;
+      }
+
+      .psychotherapy-layout {
+        flex-direction: column;
+      }
+
+      .psychotherapy-photo {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
       }
     }
   </style>
@@ -313,24 +329,24 @@
       </div>
     </section>
 
-    <!-- Ocean photograph -->
-    <div class="clinical-photo">
-      <img
-        src="ocean.jpg"
-        alt="Ocean beneath an overcast sky"
-        loading="lazy"
-      >
-    </div>
-
-    <section>
+    <section class="psychotherapy-section">
       <h2>Psychotherapy</h2>
 
-      <p class="intro">
-        My approach is collaborative and grounded in evidence-based
-        practices. I draw from cognitive-behavioral, Acceptance and
-        Commitment Therapy (ACT), psychodynamic, and relational
-        approaches, depending on each person's needs and goals.
-      </p>
+      <div class="psychotherapy-layout">
+        <p class="intro">
+          My approach is collaborative and grounded in evidence-based
+          practices. I draw from cognitive-behavioral, Acceptance and
+          Commitment Therapy (ACT), psychodynamic, and relational
+          approaches, depending on each person's needs and goals.
+        </p>
+
+        <img
+          src="ocean.jpg"
+          alt="Ocean beneath an overcast sky"
+          class="psychotherapy-photo"
+          loading="lazy"
+        >
+      </div>
     </section>
 
     <section>
