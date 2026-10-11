@@ -78,6 +78,30 @@
       margin-bottom: 1.2rem;
     }
 
+    /* Header photograph layout */
+    .header-layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .header-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .header-photo {
+      display: block;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      object-position: center 40%;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
     nav.pages {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.72em;
@@ -151,18 +175,6 @@
       margin-top: 0.8rem;
     }
 
-    /* Mountain road photograph */
-    .homepage-photo {
-      margin: 0 0 3rem;
-    }
-
-    .homepage-photo img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 3px;
-    }
-
     /* Contact */
     .contact-line {
       font-family: 'JetBrains Mono', monospace;
@@ -175,17 +187,55 @@
       font-size: 0.62em;
       color: var(--rule);
     }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      body {
+        padding: 2.5rem 1.25rem 4rem;
+      }
+
+      header {
+        margin-bottom: 2.5rem;
+      }
+
+      .header-layout {
+        gap: 1rem;
+      }
+
+      .header-photo {
+        width: 110px;
+        height: 110px;
+      }
+
+      .header-text h1 {
+        font-size: 1.3rem;
+      }
+
+      .tagline {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 
 <body>
 
   <header>
-    <h1>Kate Shirley, Ph.D.</h1>
-    <p class="tagline">
-      Licensed Psychologist and Clinician-Scientist<br>
-      Portland, Oregon
-    </p>
+    <div class="header-layout">
+      <div class="header-text">
+        <h1>Kate Shirley, Ph.D.</h1>
+        <p class="tagline">
+          Licensed Psychologist and Clinician-Scientist<br>
+          Portland, Oregon
+        </p>
+      </div>
+
+      <img
+        src="mountain-road.jpg"
+        alt="Mountain road winding through evergreen forest toward a snow-covered peak"
+        class="header-photo"
+      >
+    </div>
 
     <nav class="pages">
       <a href="index.html" class="current">Home</a>
@@ -209,15 +259,6 @@
       My private practice is separate from my clinical and research roles at OHSU and the VA.
     </p>
   </section>
-
-  <!-- Mountain road photograph -->
-  <div class="homepage-photo">
-    <img
-      src="mountain-road.jpg"
-      alt="Mountain road winding through evergreen forest toward a snow-covered peak"
-      loading="lazy"
-    >
-  </div>
 
   <section>
     <h2>Research</h2>
