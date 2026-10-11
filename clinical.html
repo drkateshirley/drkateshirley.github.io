@@ -129,6 +129,9 @@
       float: left;
       margin: 0.4rem 1.5rem 1rem 0;
       border-radius: 3px;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-user-drag: none;
     }
 
     .about-section::after {
@@ -249,9 +252,10 @@
       <h2>About Kate</h2>
 
       <img
-        src="Shirley_bwphoto.jpg"
+        src="bwphoto.jpg"
         alt="Portrait of Kate Shirley, Ph.D."
         class="about-photo"
+        draggable="false"
       >
 
       <p class="intro">
@@ -352,11 +356,11 @@
     <section>
       <h2>Appointments &amp; Fees</h2>
 
-<p>
-  I offer individual psychotherapy in person at my office in
-  the Sellwood neighborhood in Portland and via telehealth throughout Oregon.
-  Individual psychotherapy sessions are $185.
-</p>
+      <p>
+        I offer individual psychotherapy in person at my office in
+        the Sellwood neighborhood in Portland and via telehealth throughout Oregon.
+        Individual psychotherapy sessions are $185.
+      </p>
 
       <p>
         I am currently an out-of-network provider and do not bill
